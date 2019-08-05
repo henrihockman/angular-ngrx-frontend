@@ -1,0 +1,53 @@
+<!-- Header navigation -->
+<header class="nav-bar mat-elevation-z3"
+        fxLayout="row"
+        fxLayoutAlign="center center"
+>
+  <div fxFlex="0 1 960px"
+       fxLayoutAlign="space-between center"
+  >
+    <!-- Application logo -->
+    <div class="logo-container"
+         (click)="navigateToMain()"
+    >
+      <div class="company-logo unselectable"></div>
+    </div>
+
+    <span fxFlex></span>
+
+    <div fxLayout="row"
+         fxLayoutAlign="space-between center"
+    >
+      <!-- Language menu -->
+      <button class="menu-lang"
+              mat-button
+              [matMenuTriggerFor]="languageMenu"
+      >
+        <span>{{ userLanguage | uppercase }}</span>
+
+        <mat-icon class="menu-user__arrow">keyboard_arrow_down</mat-icon>
+      </button>
+
+      <mat-menu #languageMenu="matMenu"
+                [overlapTrigger]="false"
+      >
+        <button *ngFor="let language of languages " mat-menu-item>
+          <span class="lang-option">{{ language | uppercase }}</span>
+        </button>
+      </mat-menu>
+
+      <div class="divider"
+           *ngIf="loggedIn"
+      ></div>
+
+      <button class="menu-user"
+              mat-button
+              *ngIf="loggedIn"
+      >
+        <mat-icon class="menu-user__image-container">
+          <span class="menu-user__face">exit_to_app</span>
+        </mat-icon>
+      </button>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,24 @@
+// 3rd party SCSS/CSS imports
+@import '~@angular/material/theming';
+
+// Import angular-ngrx-frontend theme
+@import 'angular-ngrx-theme';
+
+// Change used core typography with custom one
+@include mat-core($custom-typography);
+
+// Application specified partial imports
+@import 'styles/mixins';
+@import 'styles/base';
+@import 'styles/components';
+@import 'styles/forms';
+@import 'styles/layout';
+@import 'styles/material';
+@import 'styles/menu';
+@import 'styles/variables';
+
+.angular-ngrx-theme {
+  // Use our own angular-ngrx theme with angular-material-theme mixin
+  @include angular-material-theme($angular-ngrx-app-theme);
+}
+

@@ -1,0 +1,38 @@
+//
+// This file contains used `primary` colors
+//
+// TODO: change these after UI/UX design is ready
+//
+
+$angular-ngrx-primary-colors: (
+  50 : #e7eaf4,
+  100 : #c3cbe3,
+  200 : #9ca9d1,
+  300 : #7486be,
+  400 : #566cb0,
+  500 : #3852a2,
+  600 : #324b9a,
+  700 : #2b4190,
+  800 : #243886,
+  900 : #172875,
+  A100 : #adbaff,
+  A200 : #7a8fff,
+  A400 : #4789ff,
+  A700 : #2e4eff,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #ffffff,
+    A700 : #ffffff,
+  )
+);

@@ -1,0 +1,76 @@
+.angular-ngrx-theme {
+  $dialog-offset: $header-height;
+  $menu-color-text: black;
+  $menu-color-background: rgba(245, 245, 245, .87);
+  $menu-item-height: $header-height;
+  $menu-max-height: calc(80vh - #{$dialog-offset});
+
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    height: $header-height;
+    background: white;
+
+    &--container {
+      height: $header-height - 4px;
+    }
+
+    .logo-image {
+      margin-right: 40px;
+    }
+
+    .menu-item {
+      box-sizing: border-box;
+      height: $header-height;
+      line-height: $header-height;
+      padding: 0 3vw;
+
+      &--container {
+        .menu-item-bottom-border {
+          background-color: $primary-color;
+          height: 10px;
+          border-radius: 10px;
+          width: 100%;
+          margin-top: -5px;
+          position: relative;
+          z-index: 1;
+          opacity: 0;
+        }
+
+        &:hover,
+        &--open {
+          .menu-item-bottom-border {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .mat-icon-button:hover {
+      transition: $interval;
+      opacity: .67;
+    }
+
+    .logo-container {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .header-menu {
+      font-size: 20px;
+      color: $primary-color;
+      font-weight: 600;
+      background-color: transparent;
+      padding: 0;
+    }
+
+    .mat-divider {
+      border-color: $primary-color !important;
+      height: 32px;
+    }
+  }
+}

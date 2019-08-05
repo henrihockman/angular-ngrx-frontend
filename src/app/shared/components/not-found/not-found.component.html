@@ -1,0 +1,29 @@
+<div class="not-found-container"
+     fxLayout="column"
+     fxLayoutAlign="center center"
+     fxFill
+>
+  <mat-card class="padding mat-elevation-z24"
+            fxLayout="column"
+            fxLayoutAlign="space-evenly"
+  >
+    <mat-card-header class="unselectable"
+                     fxLayout="row"
+                     fxLayoutAlign="center start"
+    >
+      <mat-card-title >{{ 'common.not-found.title' | translate }}</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content class="text-center">
+      <p *ngIf="path"
+         appTranslatedContent="common.not-found.best-guess"
+      >
+        <a [routerLink]="path" *appTranslatedElement="'link'">{{ path }}</a>
+      </p>
+
+      <p appTranslatedContent="common.not-found.back-to-home">
+        <a [routerLink]="'/'" *appTranslatedElement="'link'">{{ 'common.not-found.homepage' | translate }}</a>
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,0 +1,44 @@
+{
+  "auth": {
+    "login": {
+      "password": {
+        "error": "Enter password",
+        "placeholder": "Password",
+        "show": "Show password",
+        "hide": "Hide password"
+      },
+      "submit": "Login",
+      "title": "Log in",
+      "username": {
+        "error": "Enter username",
+        "placeholder": "Username"
+      },
+      "error": "Error signing in, check username and password."
+    }
+  },
+  "common": {
+    "language": {
+      "en": "English",
+      "fi": "Suomi"
+    },
+    "not-found": {
+      "title": "404 - Page not found",
+      "best-guess": "You might want to go to the {{link}} page.",
+      "back-to-home": "You can go to main page {{link}}.",
+      "homepage": "here"
+    },
+    "snackbar": {
+      "close-button": "Close"
+    },
+    "app-error": {
+      "close-tooltip": "Close"
+    }
+  },
+  "header": {
+    "user": {
+      "menu": {
+        "logout": "Logout"
+      }
+    }
+  }
+}

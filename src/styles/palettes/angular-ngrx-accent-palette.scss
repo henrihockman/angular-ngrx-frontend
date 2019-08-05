@@ -1,0 +1,38 @@
+//
+// This file contains used `accent` colors
+//
+// TODO: change these after UI/UX design is ready
+//
+
+$angular-ngrx-accent-colors: (
+  50 : #e7f3f8,
+  100 : #c2e1ef,
+  200 : #99cde4,
+  300 : #70b8d9,
+  400 : #52a9d0,
+  500 : #339ac8,
+  600 : #2e92c2,
+  700 : #2788bb,
+  800 : #207eb4,
+  900 : #146ca7,
+  A100 : #daefff,
+  A200 : #a7d9ff,
+  A400 : #74c3ff,
+  A700 : #5ab8ff,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #ffffff,
+    A700 : #ffffff,
+  )
+);

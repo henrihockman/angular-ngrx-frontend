@@ -1,0 +1,49 @@
+//
+// This file contains all Angular Material direct style overrides in application.
+//
+.angular-ngrx-theme {
+  .mat-toolbar {
+    &--transparent {
+      background-color: transparent !important;
+    }
+
+    &--white {
+      background-color: white !important;
+    }
+  }
+
+  .mat-drawer-container {
+    background-color: $background-color !important;
+  }
+
+  .mat-drawer-content {
+    overflow-x: auto;
+    overflow-y: scroll;
+  }
+
+  .mat-snack-bar-container {
+    &.snackbar {
+      max-width: 400px;
+      word-break: break-word;
+
+      &--error {
+        margin-top: calc(#{$header-height} + 24px);
+        color: $warn-color;
+        background-color: $gray-light;
+      }
+    }
+  }
+
+  .mat-icon {
+    &.small-icon {
+      font-size: 18px;
+      height: 18px;
+      width: 18px;
+      line-height: 18px;
+    }
+  }
+
+  .mat-progress-bar-fill::after {
+    background: $linear-gradient;
+  }
+}

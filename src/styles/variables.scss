@@ -1,0 +1,62 @@
+// Typography
+// Typography variables are located in angular-ngrx-theme.scss
+
+// Colors
+$background-color: #ffffff;
+$gray-light: #f0f0f0;
+$gray: #dedede;
+$white: #fff;
+$text-color-dark: mat-color($mat-light-theme-foreground, text);
+$icon-color: mat-color($mat-light-theme-foreground, icon);
+$primary-color: mat-color($angular-ngrx-app-primary, 500);
+$primary-color-light: mat-color($angular-ngrx-app-primary, 200);
+$primary-color-dark: mat-color($angular-ngrx-app-primary, 900);
+$accent-color: mat-color($angular-ngrx-app-accent, 500);
+$warn-color: mat-color($angular-ngrx-app-warn, 500);
+$warn-color-dark: mat-color($angular-ngrx-app-warn, 900);
+
+// Paddings & Margins
+$spacing: 32px;
+$spacing-half: $spacing / 2;
+$spacing-quarter: $spacing / 4;
+$spacing-1-5x: $spacing * 1.5;
+$spacing-2x: $spacing * 2;
+
+// Positions
+$positions: (top, right, bottom, left);
+
+// Sizes
+$sizes: (
+  "-half": $spacing-half,
+  "-quarter": $spacing-quarter,
+  "-1-5x": $spacing-1-5x,
+  "-2x": $spacing-2x,
+  "": $spacing,
+);
+
+// Opacities
+$opacities: (
+  "7": '.07',
+  "27": '.27',
+  "47": '.47',
+  "67": '.67',
+  "87": '.87',
+  "100": '1',
+);
+
+// Font-sizes
+$font-size-normal: 16px;
+$font-size-list: 13px;
+$font-size-small: 12px;
+
+// Border radius
+$border-radius: $spacing / 4;
+
+// Sizes
+$header-height: 80px;
+
+// Animations
+$interval: .4s;
+$interval-short: $interval / 2;
+
+$linear-gradient: linear-gradient(to right, #384EA0, #339AC8);

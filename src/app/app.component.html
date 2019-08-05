@@ -1,0 +1,41 @@
+<ng-container *ngIf="userLoggedIn; else notLoggedInUser">
+  <app-header [loggedIn]="userLoggedIn"
+              (logoutEvent)="logout()"
+  ></app-header>
+
+  <mat-sidenav-container fxFlex
+                         fxLayout="row"
+  >
+    <mat-sidenav-content fxFlex
+                         fxLayout="row"
+    >
+      <div fxFlex
+           fxLayout="column"
+           fxLayoutAlign="space-between stretch"
+      >
+        <div fxFlex>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</ng-container>
+
+<ng-template #notLoggedInUser>
+  <mat-sidenav-container fxFlex
+                         fxLayout="row"
+  >
+    <mat-sidenav-content fxFlex
+                         fxLayout="row"
+    >
+      <div fxFlex
+           fxLayout="column"
+           fxLayoutAlign="space-between stretch"
+      >
+        <div fxFlex>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</ng-template>

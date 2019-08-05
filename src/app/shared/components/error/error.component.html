@@ -1,0 +1,28 @@
+<mat-card *ngIf="isError$ | async" [@slideInOut]
+          fxLayout="column"
+>
+  <mat-card-content
+    fxLayout="row"
+    fxLayoutAlign="space-between stretch"
+  >
+    <div fxLayout="row"
+         fxLayoutAlign="space-between center"
+    >
+      <mat-icon class="margin-right-half unselectable"
+                color="warn"
+      >error</mat-icon>
+
+      <mat-error *ngIf="error$ | async; let error">
+        {{ error.message }}
+      </mat-error>
+    </div>
+
+    <button mat-icon-button
+            matTooltip="{{ 'common.app-error.close-tooltip' | translate }}"
+            matTooltipPosition="above"
+            (click)="dismiss()"
+    >
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-card-content>
+</mat-card>

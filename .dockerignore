@@ -1,0 +1,8 @@
+node_modules/
+.tmp/
+.idea/
+.git
+env/env.js
+
+# Kubernetes deployment files
+K8s/

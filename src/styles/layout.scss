@@ -1,0 +1,75 @@
+//
+// This file contains all common layout specified styles in application.
+//
+
+body {
+  font-family: $font;
+  font-size: $font-size-normal;
+  color: $text-color-dark;
+  background: $background-color;
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    transition: $interval;
+
+    &:hover {
+      color: $primary-color-dark;
+      text-decoration: underline;
+      transition: $interval;
+    }
+  }
+}
+
+app-root {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+
+  &.active {
+    top: $header-height;
+  }
+}
+
+.footer {
+  z-index: 1;
+  position: relative;
+
+  .mat-toolbar {
+    padding: 8px;
+    height: auto;
+    font-size: $font-size-list;
+    line-height: $font-size-normal;
+  }
+}
+
+.divider {
+  height: 24px;
+  width: 1px;
+  max-width: 1px !important;
+  margin: 0 4px;
+  background: $gray;
+}
+
+.arrow-holder {
+  display: block;
+  position: absolute;
+  right: 0;
+  padding: 7px 0 0 0;
+}
+
+.lang-option {
+  text-transform: capitalize;
+}
+
+.sidenav-left {
+  width: 300px;
+
+  .mat-tree-node {
+    border-bottom: 1px solid $gray-light;
+  }
+}

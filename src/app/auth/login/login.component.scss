@@ -1,0 +1,17 @@
+.nav-bar {
+  background: transparent;
+}
+
+.login-component {
+  height: 100vh;
+}
+
+.login-form {
+  min-width: 360px;
+
+  .login-password-suffix {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

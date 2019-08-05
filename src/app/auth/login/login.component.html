@@ -1,0 +1,62 @@
+<div class="unselectable login-component"
+     fxLayout="column"
+     fxLayoutAlign="center center"
+>
+  <mat-card class="padding"
+            [class.ghost]="loading"
+            fxLayout="column"
+            fxLayoutAlign="space-evenly"
+  >
+    <mat-card-header class="text-center"
+                     fxLayout="row"
+                     fxLayoutAlign="start start"
+    >
+      <mat-card-title fxFlex>{{ 'auth.login.title' | translate }}</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <form class="login-form" autocomplete="off"
+            fxLayout="column"
+            fxLayoutAlign="space-evenly"
+            [formGroup]="loginForm"
+            (ngSubmit)="login()"
+      >
+        <mat-form-field class="margin-top">
+          <input required placeholder="{{ 'auth.login.username.placeholder' | translate }}"
+                 matInput
+                 formControlName="username"
+          />
+
+          <mat-error>{{ 'auth.login.username.error' | translate }}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="margin-top">
+          <input required placeholder="{{ 'auth.login.password.placeholder' | translate }}"
+                 [type]="hide ? 'password' : 'text'"
+                 matInput
+                 formControlName="password"
+          />
+
+          <mat-icon class="login-password-suffix"
+                    color="primary"
+                    matSuffix
+                    (click)="hide = !hide"
+          >{{ hide ? 'visibility' : 'visibility_off' }}</mat-icon>
+
+          <mat-error>{{ 'auth.login.password.error' | translate }}</mat-error>
+        </mat-form-field>
+
+        <button class="margin-top-1-5x" type="submit"
+                [disabled]="!loginForm.valid || loading"
+                mat-button
+                mat-raised-button
+                color="accent"
+        >
+          {{ 'auth.login.submit' | translate }}
+        </button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+
+  <app-error class="margin-top"></app-error>
+</div>

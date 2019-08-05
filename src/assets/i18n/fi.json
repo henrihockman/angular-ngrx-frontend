@@ -1,0 +1,44 @@
+{
+  "auth": {
+    "login": {
+      "password": {
+        "error": "Kirjoita salasana",
+        "placeholder": "Salasana",
+        "show": "Näytä salasana",
+        "hide": "Piilota salasana"
+      },
+      "submit": "Kirjaudu sisään",
+      "title": "Kirjaudu sisään",
+      "username": {
+        "error": "Kirjoita käyttäjätunnus",
+        "placeholder": "Käyttäjätunnus"
+      },
+      "error": "Virhe kirjautumisessa, tarkista käyttäjätunnus ja salasana."
+    }
+  },
+  "common": {
+    "language": {
+      "en": null,
+      "fi": null
+    },
+    "not-found": {
+      "title": null,
+      "best-guess": null,
+      "back-to-home": null,
+      "homepage": null
+    },
+    "snackbar": {
+      "close-button": "Sulje"
+    },
+    "app-error": {
+      "close-tooltip": "Sulje"
+    }
+  },
+  "header": {
+    "user": {
+      "menu": {
+        "logout": "Kirjaudu ulos"
+      }
+    }
+  }
+}
